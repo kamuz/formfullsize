@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<button id="hire_us-js" type="button" class="hire_us button button--big button--blue">Start a project</button>
+
+<body>
+    <section id="hire-us-widget" class="hire_us-form">
+  <div class="wrap_form">
+    <div class="wrap_close">
+      <svg viewBox="0 0 20 20" fill="#fff" class="close-hire_us">
+        <path class="icon-close-nav" d="M19.53 18.47l.53.53L19 20.06l-.53-.53L10 11.06l-8.47 8.47-.53.53L-.06 19l.53-.53L8.94 10 .47 1.53-.06 1 1-.06l.53.53L10 8.94 18.47.47 19-.06 20.06 1l-.53.53L11.06 10l8.47 8.47zm0 0"></path>
+      </svg>
+    </div>
+    <form id="hire-us-form" class="webdev-form feedback-form" action="/en/ajax-hire-us" method="post" novalidate="novalidate">
+      <div class="form-pad" style="opacity: 1;">
+        <h2>Start a project</h2>
+        <div class="line line-mob">
+          <div class="col2 float-left">
+            <input type="text" id="order_promotion_name" name="order_promotion[name]" required="required" placeholder="Your name" aria-required="true">
+          </div>
+          <div class="col2 float-right">
+            <input type="email" id="order_promotion_email" name="order_promotion[email]" required="required" class="email" placeholder="E-mail" aria-required="true">
+          </div>
+        </div>
+        <div class="line">
+          <textarea id="order_promotion_message" name="order_promotion[message]" required="required" placeholder="Tell us a few words about the project" rows="1" aria-required="true" style="height: auto;"></textarea>
+        </div>
+        </div>
+        <div class="line">
+          <button class="btn send-request">Send request</button>
+        </div>
+        <div class="line">
+          <div class="col3">
+            <div class="contacts-info">
+              <div class="contacts-info__cell">
+                <div class="contacts-info__left">Call:</div>
+                <div class="contacts-info__right">
+                  <div class="contacts-info__item">
+                    <a href="tel:+38 (099) 061-74-40" class="phone-link">+38 (099) 061-74-40</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col3">
+            <div class="contacts-info">
+              <div class="contacts-info__cell">
+                <div class="contacts-info__left">Skype:</div>
+                <div class="contacts-info__right">
+                  <div class="contacts-info__item"><a href="skype:v.kamuz?call">v.kamuz</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col3">
+            <div class="contacts-info">
+              <div class="contacts-info__cell">
+                <div class="contacts-info__left">Write:</div>
+                <div class="contacts-info__right">
+                  <div class="contacts-info__item"><a href="mailto:info@site.ru">info@site.ru</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-success" style="display: none;">
+        <div class="wr">
+          <div class="inner-pad">
+            <h2>Thanks!</h2>
+            <p>We will examine your request
+              <br>and reply as soon as possible.</p>
+          </div>
+        </div>
+      </div>
+      <input type="hidden" id="order_promotion__token" name="order_promotion[_token]" value="pDDQXWu6bclHdS1cj7mByzg9xxxZwkqECdv_PuSIFZI">
+    </form>
+  </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#hire_us-js').click(function(){
+            $('.hire_us-form').css("display", "block");
+        });
+        $('.wrap_close').click(function(){
+            $('.hire_us-form').css("display", "none");
+        });
+    });
+</script>
+</body>
+</html>

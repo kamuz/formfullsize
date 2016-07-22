@@ -1,0 +1,404 @@
+.button--blue {
+    background: #6b86cf;
+    color: #fff;
+    border-radius: 4px;
+}
+.button--big {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0 50px;
+    height: 56px;
+    line-height: 56px;
+    letter-spacing: .05em;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+.button {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+*{
+    font-family: "Gotham Pro";
+}
+
+.hire_us-form {
+    display: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    background: rgba(23,27,29,.97);
+    z-index: 9999;
+    text-align: center;
+    text-shadow: none;
+    overflow-y: auto;
+    height: 100%;
+    position: fixed
+}
+
+.hire_us-form form {
+    position: relative;
+    max-width: 615px;
+    margin: auto;
+    padding: 0 20px
+}
+
+@media (max-width: 690px) {
+    .hire_us-form form {
+        margin-top:60px;
+        margin-bottom: 40px
+    }
+}
+
+.hire_us-form input[type=email],.hire_us-form input[type=text],.hire_us-form textarea {
+    background: 0 0;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(151,151,151,.2);
+    border-radius: 0;
+    color: #fff;
+    resize: none;
+    padding: 17px 0;
+    height: auto;
+    line-height: normal;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.hire_us-form input[type=email]:focus,.hire_us-form input[type=text]:focus,.hire_us-form textarea:focus {
+    outline: none;
+    border-color: #d6c674
+}
+
+@media (max-width: 480px) {
+    .hire_us-form input[type=email],.hire_us-form input[type=text],.hire_us-form textarea {
+        font-size:16px
+    }
+}
+
+.hire_us-form input::-webkit-input-placeholder,.hire_us-form textarea::-webkit-input-placeholder {
+    color: #fff!important;
+    opacity: .3
+}
+
+.hire_us-form input::-moz-placeholder,.hire_us-form textarea::-moz-placeholder {
+    color: #fff!important;
+    opacity: .3!important
+}
+
+.hire_us-form input:-ms-input-placeholder,.hire_us-form textarea:-ms-input-placeholder {
+    color: #fff!important;
+    opacity: .3
+}
+
+.hire_us-form h2 {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 176px;
+    margin-bottom: 12px;
+    line-height: 1.1em;
+    text-shadow: 0 1px #fff;
+    text-transform: none;
+    letter-spacing: 0
+}
+
+@media (max-width: 690px) {
+    .hire_us-form h2 {
+        margin-top:0
+    }
+}
+
+@media (max-width: 400px) {
+    .hire_us-form h2 {
+        font-size:32px
+    }
+}
+
+.hire_us-form p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 64px
+}
+
+.hire_us-form .line {
+    margin: 0 0 33px;
+    position: relative
+}
+
+.hire_us-form .google-captcha {
+    margin-top: 17px
+}
+
+@media (max-width: 690px) {
+    .hire_us-form .line-mob {
+        margin:0
+    }
+}
+
+.hire_us-form .col2 {
+    width: 255px;
+    position: relative
+}
+
+@media (max-width: 690px) {
+    .hire_us-form .col2 {
+        width:100%;
+        margin-bottom: 15px
+    }
+}
+
+.hire_us-form .col3 {
+    width: 33.3%;
+    float: left
+}
+
+.hire_us-form .col3:first-child {
+    text-align: left
+}
+
+.hire_us-form .col3:nth-child(2) {
+    text-align: center
+}
+
+.hire_us-form .col3:last-child {
+    text-align: right
+}
+
+.hire_us-form .col3 .contacts-info {
+    text-align: inherit
+}
+
+@media (max-width: 690px) {
+    .hire_us-form .col3 {
+        width:100%;
+        margin-bottom: 15px;
+        margin-right: 0
+    }
+
+    .hire_us-form .col3 .contacts-info {
+        text-align: left
+    }
+}
+
+.hire_us-form .float-left {
+    float: left!important
+}
+
+.hire_us-form .float-right {
+    float: right!important
+}
+
+.hire_us-form .btn {
+    background: #ea0d34;
+    margin-top: 25px;
+    width: 304px
+}
+
+@media (max-width: 320px) {
+    .hire_us-form .btn {
+        margin-left:-11px
+    }
+}
+
+.hire_us-form .btn:active {
+    outline: none
+}
+
+.hire_us-form .btn:focus {
+    outline: none
+}
+
+.hire_us-form .error-wr {
+    position: relative
+}
+
+.hire_us-form input.error,.hire_us-form textarea.error {
+    border-color: #ea0d34
+}
+
+.hire_us-form .error-pad {
+    text-align: left;
+    display: block;
+    position: relative;
+    z-index: 11;
+    color: #fff;
+    margin: -10px 0 0 6px
+}
+
+.hire_us-form .error-pad .error {
+    display: inline-block!important;
+    border-radius: 3px;
+    background: #ed002d;
+    box-shadow: 0 2px 3px rgba(0,0,0,.35);
+    padding: 9px 11px
+}
+
+.hire_us-form .error-pad .error:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 12px;
+    border-style: solid;
+    border-width: 6px 6px 6px 5px;
+    border-color: transparent transparent #ed002d transparent
+}
+
+.hire_us-form .form-success {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.hire_us-form .form-success .wr {
+    display: table;
+    width: 100%;
+    height: 100%
+}
+
+.hire_us-form .form-success .inner-pad {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle
+}
+
+.hire_us-form .form-success h2 {
+    margin-top: 0;
+    margin-bottom: 64px
+}
+
+.close-hire_us {
+    /*display: none;*/
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 20px
+}
+
+.open-hire_us {
+    overflow: hidden
+}
+
+.open-hire_us .close-hire_us,.open-hire_us .hire_us-form {
+    display: block
+}
+
+.btn {
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    height: 51px;
+    background: #2c373c;
+    border: none;
+    padding: 0 27px;
+    border-radius: 3px;
+    font-size: 1.05em;
+    color: #fff!important;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+.btn:hover {
+    background-color: #202629
+}
+
+.btn:active {
+    background-color: #ed002d;
+    outline: none
+}
+
+.btn .fullwidth {
+    width: 100%
+}
+
+.btn,.google-captcha {
+    display: inline-block
+}
+
+.google-captcha.mod-landing {
+    margin-bottom: 25px
+}
+
+.google-captcha.contact-captcha {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+@media (max-width: 1080px) {
+    .google-captcha.contact-captcha {
+        margin-top:0
+    }
+}
+
+@media (max-width: 320px) {
+    .google-captcha.contact-captcha {
+        margin-left:0
+    }
+
+    .google-captcha {
+        margin-left: -11px
+    }
+}
+
+.contacts-info {
+    text-align: left;
+    font-size: 14px
+}
+
+.contacts-info__left {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8px;
+    color: #606364
+}
+
+.contacts-info__right {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: .03em
+}
+
+.contacts-info__cell {
+    margin-bottom: 22px;
+    line-height: 1.2em
+}
+
+.contacts-info__cell:last-child,form .line:last-child {
+    margin-bottom: 0
+}
+
+.contacts-info .phone-link {
+    margin-bottom: 10px
+}
+
+.contacts-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400
+}
+
+form .line {
+    margin: 0 0 10px
+}
+
+form .line:after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 0;
+    overflow: hidden
+}
